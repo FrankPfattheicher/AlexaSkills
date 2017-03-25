@@ -1,0 +1,30 @@
+﻿{
+  "intents": [
+    {
+      "intent": "UserGroupIntent",
+      "slots": [
+        {
+          "name": "Monat",
+          "type": "AMAZON.DATE"
+        },
+        {
+          "name": "Termin",
+          "type": "AMAZON.DATE"
+        },
+        {
+          "name": "Ort",
+          "type": "AMAZON.DE_CITY"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
