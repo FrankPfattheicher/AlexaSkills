@@ -101,19 +101,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SlotTypes\AmazonDate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SkillController.cs" />
     <Compile Include="Alexa\SkillRequest.cs" />
     <Compile Include="Alexa\SkillResponse.cs" />
+    <Compile Include="Skill\UserGroupSkill.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="SpeechAssets\IntentSchema.json" />
+    <None Include="SpeechAssets\Texture1.dds" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SpeechAssets\EVENT_NAMES.txt" />
     <Content Include="SpeechAssets\SampleUtterances.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

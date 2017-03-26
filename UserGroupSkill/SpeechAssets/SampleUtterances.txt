@@ -1,6 +1,10 @@
-﻿UserGroupIntent nach dem nächsten Termin
-UserGroupIntent nach dem Termin im {Monat}
-UserGroupIntent nach dem Treffen im {Monat}
-UserGroupIntent nach einem Termin im {Monat}
-UserGroupIntent nach einem Treffen im {Monat}
-UserGroupIntent ob am {Termin} ein Treffen stattfindet
+﻿UG_Current nach dem nächsten {Event}
+UG_Current wann das nächste {Event} statt findet
+UG_Current ob diesen Monat noch ein {Event} statt findet
+
+UG_Month nach dem {Event} im {Month}
+UG_Month nach einem {Event} im {Month}
+UG_Month ob im {Month} ein {Event} statt findet
+
+UG_Date ob am {Date} ein {Event} stattfindet
+

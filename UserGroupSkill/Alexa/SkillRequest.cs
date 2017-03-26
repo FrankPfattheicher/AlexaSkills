@@ -29,12 +29,6 @@ namespace UserGroupSkill.Alexa
                     var requestSlots = Property("request/intent/slots")?.Children()
                         .Select(slot => slot.Children().Children().Cast<JProperty>());
 
-                    Func<JToken, bool> hasValue = token =>
-                    {
-                        var props = token.Children().Children()
-                            .Cast<JProperty>();
-                        return props.Any(p => p.Name == "value");
-                    };
                     if (requestSlots == null) return slots;
 
                     slots = requestSlots

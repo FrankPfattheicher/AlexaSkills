@@ -1,19 +1,37 @@
 ﻿{
   "intents": [
     {
-      "intent": "UserGroupIntent",
+      "intent": "UG_Current",
       "slots": [
         {
-          "name": "Monat",
-          "type": "AMAZON.DATE"
+          "name": "Event",
+          "type": "EVENT_NAMES"
+        }
+      ]
+    },
+    {
+      "intent": "UG_Month",
+      "slots": [
+        {
+          "name": "Event",
+          "type": "EVENT_NAMES"
         },
         {
-          "name": "Termin",
+          "name": "Month",
           "type": "AMAZON.DATE"
+        }
+      ]
+    },
+    {
+      "intent": "UG_Date",
+      "slots": [
+        {
+          "name": "Event",
+          "type": "EVENT_NAMES"
         },
         {
-          "name": "Ort",
-          "type": "AMAZON.DE_CITY"
+          "name": "Date",
+          "type": "AMAZON.DATE"
         }
       ]
     },
