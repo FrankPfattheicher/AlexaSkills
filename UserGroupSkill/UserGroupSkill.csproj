@@ -117,6 +117,8 @@
     <None Include="SpeechAssets\Texture1.dds" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\UserGroupSkill-108.png" />
+    <Content Include="Images\UserGroupSkill-512.png" />
     <Content Include="SpeechAssets\EVENT_NAMES.txt" />
     <Content Include="SpeechAssets\SampleUtterances.txt" />
   </ItemGroup>
