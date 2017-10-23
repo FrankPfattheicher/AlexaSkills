@@ -7,7 +7,7 @@ namespace UserGroupSkill.Alexa
 {
     public class SkillResponse
     {
-        private readonly JObject response;
+        private readonly JObject _response;
         private const string Template = @"
 {
   'version': '1.0',
@@ -24,10 +24,10 @@ namespace UserGroupSkill.Alexa
 
         public SkillResponse()
         {
-            response = JsonConvert.DeserializeObject<JObject>(Template);
+            _response = JsonConvert.DeserializeObject<JObject>(Template);
         }
 
-        public string Json => response.ToString();
+        public string Json => _response.ToString();
 
         public string OutputSpeechSsml
         {
@@ -51,7 +51,7 @@ namespace UserGroupSkill.Alexa
         private string Property(string path, string value = null)
         {
             var parts = path.Split(new [] { "/" }, StringSplitOptions.None);
-            var prop = response as JToken;
+            var prop = _response as JToken;
             foreach (var part in parts)
             {
                 prop = prop[part];
