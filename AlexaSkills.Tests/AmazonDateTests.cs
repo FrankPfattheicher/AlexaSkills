@@ -12,6 +12,7 @@ namespace AlexaSkills.Tests
         [TestMethod]
         public void TestMethod1()
         {
+			// not yet implemented
         }
     }
 }
